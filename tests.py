@@ -5,7 +5,10 @@ class TestCharCreation(unittest.TestCase):
     def test_strength(self):
         temp=Character.character("testchar.aks16")
         self.assertEqual(temp.strength,12)
-        self.assertEqual(temp.dexterity,10)
+
+    def test_MP(self):
+        temp=Character.character("testchar.aks16")
+        self.assertEqual(temp.MPmax,12)
 
 if __name__ == '__main__':
     unittest.main()

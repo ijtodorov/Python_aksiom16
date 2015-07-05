@@ -16,12 +16,12 @@ class character():
         self.vitality=statistics["vitality"]
         self.speed=statistics["speed"]
         self.magicResistance=statistics["magicResistance"]
-        self.MPmax=(self.speed+self.dexterity)/2
+        self.MPmax=int((self.speed+self.dexterity)/2)
         self.MP=self.MPmax
-        self.magicSkill=(self.intelligence+self.level)/2
-        self.magicAttack=self.magicSkill/3
+        self.magicSkill=int((self.intelligence+self.level)/2)
+        self.magicAttack=int(self.magicSkill/3)
         self.mana=self.intelligence
-        self.baseDefense=self.dexterity + self.level/2
+        self.baseDefense=int(self.dexterity + self.level/2)
         self.baseDamage=10-self.strength
         if self.baseDamage<0:
             self.baseDamage=0
