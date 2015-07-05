@@ -10,5 +10,9 @@ class TestCharCreation(unittest.TestCase):
         temp=Character.character("testchar.aks16")
         self.assertEqual(temp.MPmax,12)
 
+    def test_mana(self):
+        temp=Character.character("testchar.aks16")
+        self.assertEqual(temp.mana,8)
+
 if __name__ == '__main__':
     unittest.main()
