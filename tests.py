@@ -14,5 +14,10 @@ class TestCharCreation(unittest.TestCase):
         temp=Character.character("testchar.aks16")
         self.assertEqual(temp.mana,8)
 
+    def test_losthp(self):
+        temp=Character.character("testchar.aks16")
+        temp.vitality=temp.vitality-2
+        self.assertEqual(temp.vitality,43)
+
 if __name__ == '__main__':
     unittest.main()
