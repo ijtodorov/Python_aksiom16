@@ -26,5 +26,3 @@ class character():
         self.baseDamage=10-self.strength
         if self.baseDamage<0:
             self.baseDamage=0
-
-
