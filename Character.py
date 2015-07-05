@@ -11,7 +11,6 @@ class character():
         self.dexterity=statistics["dexterity"]
         self.intelligence=statistics["intelligence"]
         self.precision=statistics["precision"]
-        self.toughness=statistics["toughness"]
         self.name=statistics["name"]
         self.level=statistics["level"]
         self.vitality=statistics["vitality"]
